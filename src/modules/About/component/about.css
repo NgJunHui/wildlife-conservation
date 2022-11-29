@@ -1,0 +1,243 @@
+.about-banner {
+  width: 100%;
+  min-height: 300px;
+  background-image:
+    url("../../../images/leopard-banner.jpg");
+  background-repeat: no-repeat;
+  background-color: rgb(102, 102, 102);
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center top 40%;
+  position: relative;
+}
+
+/* .banner-header {
+  color: #D2D2D2;
+  position: absolute;
+  bottom: 3%;
+  left: 10%;
+  font-size: 80px;
+  font-family: 'Lobster';
+  letter-spacing: 12px;
+} */
+
+@media (max-width: 768px) {
+  .banner-header {
+    font-size: 45px;
+    letter-spacing: 10px;
+  }
+}
+
+/*******Mission*********/
+.mission-container {
+  width: 80%;
+  margin: 100px auto 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.mission-hfa h2{
+  font-size: 80px;
+  font-weight: 500;
+  font-family: 'Lobster', sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.mission-hfa strong{
+  font-size: 100px;
+  font-weight: 800;
+  font-family: 'Lobster', sans-serif;
+}
+.mission-hfa {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mission-hfa:after {
+  border-bottom: 3px solid #425F57;
+  content: '';
+  display: block;
+  width: 60%;
+  margin-left: 10%;
+  border-radius: 20px;
+}
+.mission , .vision{
+  flex:1;
+  margin: 0px 40px ;
+  text-align: center;
+}
+
+.mission h3 , .vision h3{
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.mission p , .vision p {
+  font-weight: 300;
+  padding-top: 30px;
+  color: #787878;
+  font-size: 22px;
+}
+
+.mission-text {
+  font-size: 22px;
+  color: #425F57;
+  font-weight: 600;
+  text-align: justify;
+  padding-top: 50px;
+}
+
+/***People ****/
+
+.people-container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.people-title{
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.people-content{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.people-content img{
+  width:500px;
+}
+
+.people-img,.people-text{
+  flex:1;
+}
+
+.people-text h4{
+  font-weight: 800;
+}
+
+.people-text h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 0.8rem;
+}
+.people-text h6{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0.5rem;
+  padding-bottom: 20px;
+}
+.people-text p{
+ 
+  line-height: 1.8rem;
+}
+.directors-container{
+  margin: 0 auto;
+  width:80%;
+}
+.directors-content{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.directors-title {
+  font-weight: 700;
+  margin:100px auto 50px auto;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.each-director{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.each-director img{
+  width:230px;
+  border-radius: 50%;
+}
+
+.each-director h6{
+font-weight: 600;
+padding-top: 10px;
+}
+
+.each-director p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.8rem;
+  text-transform: uppercase;
+}
+
+
+.partners-title{
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 150px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.marquee-img img{
+  width:300px;
+  padding: 0 20px;
+}
+.marquee-p{
+  text-align: center;
+  font-size: 26px;
+}
+
+.partners-marquee{
+  margin-bottom: 200px;
+}
+
+@media (max-width:1030px){
+  .people-content{
+    flex-direction: column;
+  }
+  .people-img{
+    display:block;
+    margin:0 auto;
+  }
+  .directors-content{
+    flex-direction: column;
+  }
+  .people-content{
+    text-align: center;
+    
+  }
+  .people-content h4{
+    margin-top: 30px;
+  }
+
+}
+@media (max-width: 768px) {
+  .mission-container{
+    flex-direction: column;
+  }
+  
+  .people-content img{
+    width:400px;
+  }
+
+
+  .each-director{
+    margin-bottom: 50px;
+  }
+}
+

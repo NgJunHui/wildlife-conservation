@@ -1,0 +1,239 @@
+.join-banner {
+  width: 100%;
+  min-height: 300px;
+  background-image:
+    url("../../../images/zebra-banner.jpg");
+  background-color: rgb(114, 114, 114);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center bottom 15%;
+  position: relative;
+}
+
+.banner-header {
+  color: #D2D2D2;
+  position: absolute;
+  bottom: 3%;
+  left: 10%;
+  font-size: 80px;
+  font-family: 'Catamaran', sans-serif;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .banner-header {
+    font-size: 45px;
+    letter-spacing: 10px;
+  }
+}
+
+.community-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.community-img {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.community-title {
+  margin-top: 150px;
+  font-size: 50px;
+  font-weight: 800;
+
+}
+
+.community-text {
+  width: 50%;
+  padding: 0px 0 30px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #787878;
+}
+
+
+
+/********FORMS**************/
+
+.form-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+.form-questions-text {
+  text-align: center;
+  font-weight: 400;
+}
+
+.header-text {
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+
+.form-div {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 100px;
+  padding: 50px 0 50px 0;
+}
+
+.progress-bar-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  margin: 0 auto;
+  height: 20px;
+  border-radius: 30px;
+  border: 2px solid #425F57;
+  margin-bottom: 50px;
+}
+
+.progress-bar div {
+  width: 33.3%;
+  height: 100%;
+  margin: 3px;
+  border-radius: 30px;
+  background-color: #425F57;
+  transition: all 0.9s ease-in-out;
+}
+
+.progress-bar-numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar-numbers p {
+  font-weight: 700;
+  text-align: center;
+  border: 3px solid;
+  border-radius: 50%;
+  width: 40px;
+  margin-bottom: 3px;
+  color: white;
+}
+
+.progress-bar-numbers h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.progress-bar-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form-footer {
+  margin-top: 50px;
+}
+
+/***** forms btn *********/
+.formbtn {
+  font-size: 22px;
+  font-weight: 500;
+  background: #425F57;
+  width: 70%;
+  height: 60px;
+  display: block;
+  padding: 10px 20px;
+  margin: 20px auto;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transistion-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.formbtn:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.05);
+  background-color: black;
+  color: white;
+  font-weight: 500;
+}
+
+.formbtn:disabled {
+  background-color: #DBDBDB;
+  color: #ABABAB;
+  cursor: context-menu;
+}
+
+.formbtn[disabled]:hover {
+  transition: all 100s ease-in-out;
+
+}
+
+.comfirmation-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comfirmation-container h2 {
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.comfirmation-container p {
+  color: #787878;
+}
+
+.api-spinners{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width:768px) {
+  .form-title {
+    margin-left: 8%;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .form-div {
+    box-shadow: none;
+  }
+
+  .formbtn {
+    width: 80%;
+  }
+
+  .progress-bar {
+    width: 70%;
+    margin-bottom: 40px;
+  }
+
+  .community-img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .community-text {
+    width: 80%;
+  }
+}
